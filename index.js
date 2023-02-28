@@ -69,27 +69,6 @@ function reveal(){
   }
 }
 
-//Side Reveal
-window.addEventListener('scroll', sidereveal);
-
-function sidereveal(){
-  var sidereveals = document.querySelectorAll('.sidereveal');
-
-  for(var i = 0; i < sidereveals.length; i++){
-
-    let windowheight = window.innerHeight;
-    let revealtop = sidereveals[i].getBoundingClientRect().top;
-    let revealpoint = 50;
-
-    if(revealtop < windowheight - revealpoint){
-      sidereveals[i].classList.add('siderevealsactive');
-    }
-    else{
-      sidereveals[i].classList.remove('siderevealsactive');
-    }
-  }
-}
-
 //Dark/Light Mode Toggle
 
 const colorToggle = document.getElementById("darklightToggle");

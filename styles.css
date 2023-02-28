@@ -2,6 +2,7 @@
 
 html {
   scroll-behavior: smooth;
+	margin: 0;
 }
 body {
   position: relative;
@@ -54,13 +55,3 @@ li.completedtodo {
   opacity: 1;
 }
 
-.sidereveal {
-  position: relative;
-  transform: translateX(140px);
-  opacity: 0;
-  transition: all 1.5s ease;
-}
-.sidereveal.siderevealsactive {
-  transform: translateX(0px);
-  opacity: 1;
-}
