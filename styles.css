@@ -1,0 +1,63 @@
+html {
+  scroll-behavior: smooth;
+}
+body {
+  position: relative;
+  margin: 0;
+  -ms-overflow-style: none;
+}
+body::-webkit-scrollbar {
+  display: none;
+}
+/* Navigation */
+.nav-link.active {
+	border-bottom: 3px solid #26addb;
+}
+.nav-link:hover {
+	border-bottom: 3px solid #26addb;
+}
+/* Todo List Project */
+#mylist li {
+  list-style: none;
+  margin: 3px;
+  color: #054a91;
+  font-size: 24px;
+  border-bottom: 2px solid #054a91;
+  cursor: pointer;
+  transition: 0.2s;
+}
+#mylist li:hover {
+  background-color: #81a4cd;
+  color: white;
+}
+#mylist span {
+  background-color: rgb(253, 122, 122);
+  color: white;
+}
+li.completedtodo {
+  text-decoration: line-through;
+}
+
+
+/* Reveal Effect */
+.reveal {
+  position: relative;
+  transform: translateY(140px);
+  opacity: 0;
+  transition: all 1.5s ease;
+}
+.reveal.revealsactive {
+  transform: translateY(0px);
+  opacity: 1;
+}
+
+.sidereveal {
+  position: relative;
+  transform: translateX(140px);
+  opacity: 0;
+  transition: all 1.5s ease;
+}
+.sidereveal.siderevealsactive {
+  transform: translateX(0px);
+  opacity: 1;
+}
