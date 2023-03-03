@@ -78,3 +78,16 @@ $(document).ready(function(){
     $("div").toggleClass("bg-dark", "bg-light");
   });
 });
+
+//New Project Toast 
+
+
+
+function showToast(){
+  let toast = document.querySelector(".toast");
+
+  toast.classList.add("show");
+  setTimeout(function(){
+    toast.classList.remove("show");
+  }, 10000);
+};
