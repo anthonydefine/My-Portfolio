@@ -20,6 +20,15 @@ body::-webkit-scrollbar {
 .nav-link:hover {
 	border-bottom: 3px solid #26addb;
 }
+/* Landing */
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 812px) 
+  and (-webkit-min-device-pixel-ratio: 3) { 
+    #herosection {
+      min-height: 100vh;
+    }
+}
 /* Todo List Project */
 #mylist li {
   list-style: none;

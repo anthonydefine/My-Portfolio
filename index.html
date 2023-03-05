@@ -96,10 +96,10 @@
     </header>
 		<div class="p-0 p-lg-5 d-flex justify-content-center align-items-center min-vh-100" id="landingsection">
 			<!--Landing Section-->
-			<div class="container-fluid bg-secondary-subtle shadow-lg rounded-4 py-0 py-lg-5">
+			<div class="container-fluid d-flex align-items-center bg-secondary-subtle shadow-lg rounded-4 py-0 py-lg-5" id="herosection">
 				<div class="row row-cols-1 row-cols-md-2 g-0 py-0 p-md-5">
 					<div class="col col-md-3 d-flex d-md-none pt-4 justify-content-center">
-						<img style="max-width: 200px; max-height: 200px;" src="images/bitmoji/IMG_4103.PNG" alt="">
+						<img src="images/bitmoji/IMG_4103.PNG" alt="">
 					</div>
 					<div class="col col-md-9">
 						<h3 class="text-dark">
@@ -117,13 +117,13 @@
 							<img src="images/dev-icons/icons8-sass-48.png" alt="" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Sass">
 						</div>
 						<div class="d-flex mt-md-5 pb-3 pb-md-0 justify-content-evenly">
-							<button type="button" class="btn btn-secondary px-lg-5 rounded-5">
+							<button type="button" class="btn btn-outline-info bg-info-subtle px-lg-5 shadow-sm rounded-5">
 								<img src="images/dev-icons/icons8-github-48.png" alt="Github icon" class="d-none d-md-inline-block">
-								<a href="https://github.com/anthonydefine" target="_blank" class="text-decoration-none text-light">My Github</a>
+								<a href="https://github.com/anthonydefine" target="_blank" class="text-decoration-none text-info-emphasis">My Github</a>
 							</button>
-							<button type="button" class="btn btn-secondary px-lg-5 rounded-5">
+							<button type="button" class="btn btn-outline-info bg-info-subtle px-lg-5 shadow-sm rounded-5">
 								<img src="images/dev-icons/icons8-linkedin-48.png" alt="Linkedin icon" class="d-none d-md-inline-block">
-								<a href="https://www.linkedin.com/in/anthony-define/" target="_blank" class="text-decoration-none text-light">My Linkedin</a>
+								<a href="https://www.linkedin.com/in/anthony-define/" target="_blank" class="text-decoration-none text-info-emphasis">My Linkedin</a>
 							</button>
 						</div>
 					</div>
@@ -497,14 +497,13 @@
 			<div class="toast-container position-fixed bottom-0 end-0 p-4" id="toastPlacement">
 				<div class="toast" role="alert" aria-live="assertive" aria-atomic="true">
 					<div class="toast-header">
-						<strong class="me-auto text-info">Check out my newest project!</strong>
+						<strong class="me-auto fs-5 text-info">Check out my newest project!</strong>
 						<button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
 					</div>
 					<div class="toast-body text-center">
 						<img class="w-75" src="images/project-thumbnails/geminithumb.png" alt="">
 						<div class="bg-light border-0 d-flex justify-content-between pt-3">
-							<a href="https://github.com/anthonydefine/GeminiWebsite" target="_blank" class="card-link btn btn-outline-dark">Source code</a>
-							<a href="https://anthonydefine.github.io/GeminiWebsite/" target="_blank" class="card-link btn btn-outline-dark">View website</a>
+							<a href="#projectsection" class="card-link btn btn-outline-dark w-100" id="toastBtn">Got to projects</a>
 						</div>
 					</div>
 				</div>

@@ -81,8 +81,6 @@ $(document).ready(function(){
 
 //New Project Toast 
 
-
-
 function showToast(){
   let toast = document.querySelector(".toast");
 
@@ -91,3 +89,7 @@ function showToast(){
     toast.classList.remove("show");
   }, 10000);
 };
+
+const toastBtn = document.querySelector("#toastBtn");
+
+addEventListener
