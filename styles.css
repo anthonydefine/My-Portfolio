@@ -9,6 +9,7 @@ body {
   margin: 0;
   -ms-overflow-style: none;
 	font-family: 'Titillium Web', sans-serif !important;
+  box-sizing: border-box;
 }
 body::-webkit-scrollbar {
   display: none;
@@ -27,7 +28,11 @@ body::-webkit-scrollbar {
   and (-webkit-min-device-pixel-ratio: 3) { 
     #herosection {
       min-height: 100vh;
+      min-width: 100vw;
     }
+}
+#herosection button:hover a {
+  color: white!important;
 }
 /* Todo List Project */
 #mylist li {
