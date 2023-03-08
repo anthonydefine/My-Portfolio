@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" >
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,17 +10,17 @@
     <link rel="stylesheet" href="css/main.min.css">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" 
     crossorigin="anonymous"></script>
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+		
 </head>
-<body data-bs-spy="scroll" data-bs-target="#navbarNav" data-bs-offset="0" class="scrollspy-example" tabindex="0" onload="setTimeout(showToast, 3000);">
+<body data-bs-spy="scroll"  data-bs-target="#navbarNav" id="pageBody" data-bs-offset="0" class="scrollspy-example" tabindex="0" onload="setTimeout(showToast, 3000);">
     <header>
-			<nav class="navbar navbar-expand-md bg-light pt-md-2 fixed-top shadow-sm">
+			<nav class="navbar navbar-expand-md bg-body pt-md-2 fixed-top shadow-sm">
 				<div class="container-fluid">
 					<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
 						<span class="navbar-toggler-icon"></span>
 					</button>
 					<div class="dropdown d-block d-md-none pe-md-3">
-						<button type="button" class="btn btn-outline-dark rounded-pill dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false" data-bs-auto-close="outside">
+						<button type="button" class="btn btn-outline-info rounded-pill dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false" data-bs-auto-close="outside">
 							Contact
 						</button>
 						<form class="dropdown-menu dropdown-menu-end p-3" action="https://formsubmit.co/defineworkspace00@gmail.com" method="POST" style="width: 16rem;" id="contactform">
@@ -49,23 +49,28 @@
 					<div class="collapse navbar-collapse" id="navbarTogglerDemo02">
 						<ul class="navbar-nav mx-auto mb-2 mb-lg-0" id="navbarNav">
 							<li class="nav-item">
-								<a class="nav-link active" aria-current="page" href="#landingsection">Home</a>
+								<a class="nav-link d-inline-block active" aria-current="page" href="#landingsection">Home</a>
 							</li>
 							<li class="nav-item mx-md-5">
-								<a class="nav-link" href="#profilesection">Profile</a>
+								<a class="nav-link d-inline-block" href="#profilesection">Profile</a>
 							</li>
 							<li class="nav-item">
-								<a class="nav-link" href="#projectsection">Projects</a>
+								<a class="nav-link d-inline-block" href="#projectsection">Projects</a>
 							</li>
+							<div class="form-check form-switch mt-2 d-block d-sm-none" id="dark-container">
+								<label class="form-check-label me-5" for="flexSwitchCheckDefault">Dark mode</label>
+								<input class="form-check-input bg-body border-info px-3" type="checkbox" role="switch" id="flexSwitchCheckDefault" onclick="darkMode()">
+							</div>
 						</ul>
 					</div>
 				</div>
-				<div class="d-none d-md-flex end-0 position-absolute">
-					<button type="button" class="btn btn-outline-info me-2 disabled" id="darklightToggle" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Under construction">
-						DarkMode
-					</button>
+				<div class="d-none d-md-flex align-items-center end-0 position-absolute">
+					<div class="form-check form-switch me-3 d-flex align-items-center" id="dark-container">
+						<label class="form-check-label float-start me-5 d-none d-lg-block" for="flexSwitchCheckDefault">Dark mode</label>
+						<input class="form-check-input bg-body border-info px-3" type="checkbox" role="switch" id="flexSwitchCheckDefault" onclick="darkMode()">
+					</div>
 					<div class="dropdown me-3">
-						<button type="button" class="btn btn-outline-dark rounded-pill dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false" data-bs-auto-close="outside">
+						<button type="button" class="btn btn-outline-info rounded-pill dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false" data-bs-auto-close="outside">
 							Contact
 						</button>
 						<form class="dropdown-menu dropdown-menu-end p-3" action="https://formsubmit.co/defineworkspace00@gmail.com" method="POST" style="width: 16rem;" id="contactform">
@@ -73,20 +78,20 @@
 							<div class="row row-cols-2 mb-3">
 								<div class="col">
 									<label for="firstname" class="form-label">First name*</label>
-									<input type="text" name="First name" class="form-control" id="firstname" required>
+									<input type="text" name="First name" class="form-control bg-body" id="firstname" required>
 								</div>
 								<div class="col">
 									<label for="lastname" class="form-label">Last name*</label>
-									<input type="text" name="Last name" class="form-control" id="lastname" required>
+									<input type="text" name="Last name" class="form-control bg-body" id="lastname" required>
 								</div>
 							</div>
 							<div class="mb-3">
 								<label for="emailinput" class="form-label">Email address*</label>
-								<input type="email" name="E-mail" class="form-control" id="emailinput" placeholder="email@example.com" required>
+								<input type="email" name="E-mail" class="form-control bg-body" id="emailinput" placeholder="email@example.com" required>
 							</div>
 							<div class="mb-3">
 								<label for="messagearea" class="form-label">Message*</label>
-								<textarea class="form-control" name="Message" id="messagearea" rows="3" required></textarea>
+								<textarea class="form-control bg-body" name="Message" id="messagearea" rows="3" required></textarea>
 							</div>
 							<button type="submit" class="btn btn-primary w-100">Submit</button>
 						</form>
@@ -94,21 +99,21 @@
 				</div>
 			</nav>
     </header>
-		<div class="p-0 p-lg-5 d-flex justify-content-center align-items-center min-vh-100" id="landingsection">
+		<section class="p-0 p-lg-5 d-flex justify-content-center align-items-center min-vh-100" id="landingsection">
 			<!--Landing Section-->
-			<div class="container-fluid d-flex align-items-center bg-secondary-subtle shadow-lg rounded-4 py-0 py-lg-5" id="herosection">
+			<div class="container-fluid d-flex align-items-center bg-body shadow-lg rounded-4 py-0 py-lg-5" id="herosection">
 				<div class="row row-cols-1 row-cols-md-2 g-0 py-0 p-md-5">
 					<div class="col col-md-3 d-flex d-md-none pt-4 justify-content-center">
 						<img src="images/bitmoji/IMG_4103.PNG" alt="">
 					</div>
 					<div class="col col-md-9">
-						<h3 class="text-dark">
-							<small class="text-dark fs-6">Hello my name is:</small>
+						<h3>
+							<small class="fs-6">Hello my name is:</small>
 							Anthony Define
 						</h3>
-						<h1 class="text-uppercase text-info fw-bold display-1">web developer</h1>
-						<h3 class="text-dark">Focused on using frontend technologies to solve problems + grow your business.</h3>
-						<div class="my-4 px-5 d-flex justify-content-evenly" id="devicons">
+						<h1 class="text-uppercase text-info fw-bold d-inline-block display-1">web developer</h1>
+						<h3>Focused on using frontend technologies to solve problems + grow your business.</h3>
+						<div class="my-4 px-5 d-flex justify-content-around" id="devicons">
 							<img src="images/dev-icons/icons8-html-5-48.png" alt="" data-bs-toggle="tooltip" data-bs-placement="bottom" title="HTML5">
 							<img src="images/dev-icons/icons8-css3-48.png" alt="" data-bs-toggle="tooltip" data-bs-placement="bottom" title="CSS3">
 							<img src="images/dev-icons/icons8-javascript-48.png" alt="" data-bs-toggle="tooltip" data-bs-placement="bottom" title="JavaScript">
@@ -117,11 +122,11 @@
 							<img src="images/dev-icons/icons8-sass-48.png" alt="" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Sass">
 						</div>
 						<div class="d-flex mt-md-5 pb-3 pb-md-0 justify-content-evenly">
-							<button type="button" class="btn btn-outline-primary d-flex align-items-center px-lg-4 shadow-sm rounded-5">
+							<button type="button" class="btn btn-outline-info d-flex align-items-center px-lg-4 shadow-sm rounded-5">
 								<img src="images/dev-icons/icons8-github-48.png" alt="Github icon" class="d-none d-md-inline-block me-3">
 								<a href="https://github.com/anthonydefine" target="_blank" class="text-decoration-none text-info">My Github</a>
 							</button>
-							<button type="button" class="btn btn-outline-primary d-flex align-items-center px-lg-4 shadow-sm rounded-5">
+							<button type="button" class="btn btn-outline-info d-flex align-items-center px-lg-4 shadow-sm rounded-5" id="linkedBtn">
 								<img src="images/dev-icons/icons8-linkedin-48.png" alt="Linkedin icon" class="d-none d-md-inline-block me-3">
 								<a href="https://www.linkedin.com/in/anthony-define/" target="_blank" class="text-decoration-none text-info">My Linkedin</a>
 							</button>
@@ -132,126 +137,128 @@
 					</div>
 				</div>
 			</div>
-		</div>
+		</section>
 		<!--Profile Section-->
-		<div class="container-fluid bg-secondary-subtle rounded-4 my-3 p-md-5 shadow-lg" id="profilesection">
-			<div class="row row-cols-1 row-cols-md-2 text-center">
-				<div class="col col-md-4 mx-auto">
-					<img src="images/bitmoji/IMG_4106.PNG" class="img-fluid" alt="">
-				</div>
-				<div class="col col-md-8 align-self-center">
-					<h1 class="mb-4 text-info display-3">Learn more about me.</h1>
-					<p class="text-dark">I enjoy bringing projects from conception to completion, and the satisfaction it brings when I see the finished product. 
-						Although not in the physical space, the web development career gives me a similar challenge and sense of gratification. I pick up new concepts, and technologies 
-						quickly, and am able to adapt to new ways of thinking.
-					</p>
-					<div class="text-end">
-						<a href="Resume.pdf" target="_blank" class="ms-2 text-dark">Downloadable resume</a>
-						<img src="images/dev-icons/icons8-pdf-48 (1).png" style="scale: .6;">
+		<div class="min-vh-100" id="profilesection">
+			<div class="container-fluid bg-secondary-subtle rounded-4 my-3 px-md-5 shadow-lg">
+				<div class="row row-cols-1 row-cols-md-2 text-center">
+					<div class="col col-md-4 mx-auto">
+						<img src="images/bitmoji/IMG_4106.PNG" class="img-fluid" alt="">
 					</div>
-				</div>
-			</div>
-		</div>
-		<div class="bg-light px-2 px-md-5">
-			<div class="row row-cols-1 row-cols-md-2 g-3">
-				<div class="col col-md-8 reveal">
-					<h3 class="py-3 text-dark">Founding a company</h3>
-					<p class="py-3 text-dark">“StarkGotSole” was an event business I founded in the later years of high school. I recognized a need locally to have an event where people could buy/sell/trade their streetwear.  
-						It was an immediate success and grew quickly.<br><br> Within the first several shows we outgrew the original church gym location, and held events at the University of Akron ballroom. 
-						I hired staff to help with each event (ticketing, concessions, police, customer service), ran all social media, and built the website to further our reach.<br><br> From the start it was about community, 
-						and throughout our five years of operation, after each show we donated 10% of profits to purchasing brand new shoes for our local homeless shelter. I donated hundreds of shoes, 
-						connected many people, and learned valuable lessons along the way.</p>
-						<div class="d-flex justify-content-evenly">
-							<button type="button" class="btn btn-primary rounded-5 mt-2">
-                <img src="images/dev-icons/icons8-search-property-48.png" class="d-none d-md-inline">
-                <a href="https://www.cantonrep.com/story/news/local/plain/2014/05/30/glenoak-senior-gets-into-shoe/37229228007/" target="_blank" class="text-decoration-none text-light">Newspaper article</a>
-              </button>
-              <button type="button" class="btn btn-primary rounded-5 mt-2" data-bs-toggle="modal" data-bs-target="#eventpics">
-                <img src="images/dev-icons/icons8-image-gallery-48.png" class="d-none d-md-inline">
-                <a class="text-decoration-none text-light ps-md-1">Event photos</a>
-              </button>
-						</div>
-				</div>
-				<div class="col col-md-4 bg-primary text-light text-center rounded-3">
-					<h3 class="py-3">Certification</h3>
-					<p class="my-5">As a highly disciplined individual, I set my own goal to teach myself these frontend skills. After several physical textbooks, 
-						online courses, and countless hours of building my skills. I felt confident enough to take a certification exam through <a href="https://www.w3schools.com/" class="text-light">W3schools.com</a>, and passed.
-					</p>
-					<div class="py-4">
-						<div class="mt-3">
-							<img src="images/dev-icons/icons8-pdf-48 (1).png" class="d-none d-lg-inline">
-							<a href="certficate.pdf" target="_blank" class="text-white">Frontend Certificate</a>
+					<div class="col col-md-8 align-self-center">
+						<h1 class="mb-4 text-info display-3">Learn more about me.</h1>
+						<p>I enjoy bringing projects from conception to completion, and the satisfaction it brings when I see the finished product. 
+							Although not in the physical space, the web development career gives me a similar challenge and sense of gratification. I pick up new concepts, and technologies 
+							quickly, and am able to adapt to new ways of thinking.
+						</p>
+						<div class="text-end">
+							<a href="Resume.pdf" target="_blank" class="ms-2 text-body">Downloadable resume</a>
+							<img src="images/dev-icons/icons8-pdf-48 (1).png" style="scale: .6;">
 						</div>
 					</div>
 				</div>
 			</div>
-		</div>
-		<div class="modal fade" id="eventpics" tabindex="-1" aria-labelledby="pictures-of-events" aria-hidden="true">
-			<div class="modal-dialog modal-dialog-centered">
-				<div class="modal-content">
-					<div class="modal-header bg-secondary-subtle shadow-sm text-white">
-						<h5 class="modal-title text-dark" id="exampleModalLabel">Pictures from our events</h5>
-						<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+			<div class="px-2 p-md-5">
+				<div class="row row-cols-1 row-cols-md-2 g-4">
+					<div class="col col-md-8 pe-md-5 reveal">
+						<h3 class="py-3">Founding a company</h3>
+						<p class="py-3">“StarkGotSole” was an event business I founded in the later years of high school. I recognized a need locally to have an event where people could buy/sell/trade their streetwear.  
+							It was an immediate success and grew quickly.<br><br> Within the first several shows we outgrew the original church gym location, and held events at the University of Akron ballroom. 
+							I hired staff to help with each event (ticketing, concessions, police, customer service), ran all social media, and built the website to further our reach.<br><br> From the start it was about community, 
+							and throughout our five years of operation, after each show we donated 10% of profits to purchasing brand new shoes for our local homeless shelter. I donated hundreds of shoes, 
+							connected many people, and learned valuable lessons along the way.</p>
+							<div class="d-flex justify-content-evenly">
+								<button type="button" class="btn btn-info rounded-5 mt-2">
+									<img src="images/dev-icons/icons8-search-property-48.png" class="d-none d-md-inline">
+									<a href="https://www.cantonrep.com/story/news/local/plain/2014/05/30/glenoak-senior-gets-into-shoe/37229228007/" target="_blank" class="text-decoration-none text-light">Newspaper article</a>
+								</button>
+								<button type="button" class="btn btn-info rounded-5 mt-2" data-bs-toggle="modal" data-bs-target="#eventpics">
+									<img src="images/dev-icons/icons8-image-gallery-48.png" class="d-none d-md-inline">
+									<a class="text-decoration-none text-light ps-md-1">Event photos</a>
+								</button>
+							</div>
 					</div>
-					<div class="modal-body rounded-bottom bg-light">
-						<div id="eventCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
-							<div class="carousel-indicators">
-								<button type="button" data-bs-target="#eventCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-								<button type="button" data-bs-target="#eventCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
-								<button type="button" data-bs-target="#eventCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
-								<button type="button" data-bs-target="#eventCarousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
+					<div class="col col-md-4 bg-primary text-light text-center rounded-3">
+						<h3 class="py-3">Certification</h3>
+						<p class="my-5">As a highly disciplined individual, I set my own goal to teach myself these frontend skills. After several physical textbooks, 
+							online courses, and countless hours of building my skills. I felt confident enough to take a certification exam through <a href="https://www.w3schools.com/" class="text-light">W3schools.com</a>, and passed.
+						</p>
+						<div class="py-4">
+							<div class="mt-3">
+								<img src="images/dev-icons/icons8-pdf-48 (1).png" class="d-none d-lg-inline">
+								<a href="certficate.pdf" target="_blank" class="text-white">Frontend Certificate</a>
 							</div>
-							<div class="carousel-inner">
-								<div class="carousel-item active">
-									<img src="images/profile-img/SGS Dropbox (71 of 92).jpg" class="d-block w-100" alt="...">
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="modal fade" id="eventpics" tabindex="-1" aria-labelledby="pictures-of-events" aria-hidden="true">
+				<div class="modal-dialog modal-dialog-centered">
+					<div class="modal-content">
+						<div class="modal-header bg-secondary-subtle shadow-sm text-white">
+							<h5 class="modal-title text-dark" id="exampleModalLabel">Pictures from our events</h5>
+							<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+						</div>
+						<div class="modal-body rounded-bottom bg-light">
+							<div id="eventCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
+								<div class="carousel-indicators">
+									<button type="button" data-bs-target="#eventCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+									<button type="button" data-bs-target="#eventCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+									<button type="button" data-bs-target="#eventCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+									<button type="button" data-bs-target="#eventCarousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
 								</div>
-								<div class="carousel-item">
-									<img src="images/profile-img/SGS Dropbox (55 of 92).jpg" class="d-block w-100" alt="...">
+								<div class="carousel-inner">
+									<div class="carousel-item active">
+										<img src="images/profile-img/SGS Dropbox (71 of 92).jpg" class="d-block w-100" alt="...">
+									</div>
+									<div class="carousel-item">
+										<img src="images/profile-img/SGS Dropbox (55 of 92).jpg" class="d-block w-100" alt="...">
+									</div>
+									<div class="carousel-item">
+										<img src="images/profile-img/SGS Dropbox (61 of 92).jpg" class="d-block w-100" alt="...">
+									</div>
+									<div class="carousel-item">
+										<img src="images/profile-img/SGS Dropbox (43 of 92).jpg" class="d-block w-100" alt="...">
+									</div>
 								</div>
-								<div class="carousel-item">
-									<img src="images/profile-img/SGS Dropbox (61 of 92).jpg" class="d-block w-100" alt="...">
-								</div>
-								<div class="carousel-item">
-									<img src="images/profile-img/SGS Dropbox (43 of 92).jpg" class="d-block w-100" alt="...">
-								</div>
+								<button class="carousel-control-prev" type="button" data-bs-target="#eventCarousel" data-bs-slide="prev">
+									<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+									<span class="visually-hidden">Previous</span>
+								</button>
+								<button class="carousel-control-next" type="button" data-bs-target="#eventCarousel" data-bs-slide="next">
+									<span class="carousel-control-next-icon" aria-hidden="true"></span>
+									<span class="visually-hidden">Next</span>
+								</button>
 							</div>
-							<button class="carousel-control-prev" type="button" data-bs-target="#eventCarousel" data-bs-slide="prev">
-								<span class="carousel-control-prev-icon" aria-hidden="true"></span>
-								<span class="visually-hidden">Previous</span>
-							</button>
-							<button class="carousel-control-next" type="button" data-bs-target="#eventCarousel" data-bs-slide="next">
-								<span class="carousel-control-next-icon" aria-hidden="true"></span>
-								<span class="visually-hidden">Next</span>
-							</button>
 						</div>
 					</div>
 				</div>
 			</div>
 		</div>
 		<!--Project Section-->
-		<div class="container-fluid bg-light-subtle my-5 p-md-5 shadow-sm min-vh-100" id="projectsection">
-			<h1 class="text-center py-4 text-dark">Check out my projects.</h1>
+		<section class="container-fluid bg-light-subtle my-5 p-md-5 shadow-sm min-vh-100" id="projectsection">
+			<h1 class="text-center py-4">Check out my projects.</h1>
 			<ul class="nav nav-tabs justify-content-center shadow-sm" id="myTab" role="tablist">
 				<li class="nav-item" role="presentation">
-					<button class="nav-link active" id="website-tab" data-bs-toggle="tab" data-bs-target="#website-tab-pane" type="button" role="tab" aria-controls="website-tab-pane" aria-selected="true">Websites</button>
+					<button class="nav-link active text-body" id="website-tab" data-bs-toggle="tab" data-bs-target="#website-tab-pane" type="button" role="tab" aria-controls="website-tab-pane" aria-selected="true">Websites</button>
 				</li>
 				<li class="nav-item" role="presentation">
-					<button class="nav-link" id="application-tab" data-bs-toggle="tab" data-bs-target="#application-tab-pane" type="button" role="tab" aria-controls="application-tab-pane" aria-selected="false">Applications</button>
+					<button class="nav-link text-body" id="application-tab" data-bs-toggle="tab" data-bs-target="#application-tab-pane" type="button" role="tab" aria-controls="application-tab-pane" aria-selected="false">Applications</button>
 				</li>
 				<li class="nav-item" role="presentation">
-					<button class="nav-link" id="frontend-tab" data-bs-toggle="tab" data-bs-target="#frontend-tab-pane" type="button" role="tab" aria-controls="frontend-tab-pane" aria-selected="false">Frontend Mentor</button>
+					<button class="nav-link text-body" id="frontend-tab" data-bs-toggle="tab" data-bs-target="#frontend-tab-pane" type="button" role="tab" aria-controls="frontend-tab-pane" aria-selected="false">Frontend Mentor</button>
 				</li>
 			</ul>
 			<div class="tab-content" id="myTabContent">
 				<div class="tab-pane fade show active" id="website-tab-pane" role="tabpanel" aria-labelledby="website-tab" tabindex="0">
 					<div class="row row-cols-1 row-cols-lg-2 mt-3 g-3 reveal">
 						<div class="col">
-							<div class="card bg-light shadow-lg h-100">
+							<div class="card shadow-lg h-100">
 								<img src="images/project-thumbnails/geminithumb.png" class="card-img-top" alt="...">
 								<div class="card-body d-flex justify-content-between align-items-center">
-									<h4 class="card-title text-dark">Gemini Industrial Website</h4>
+									<h4 class="card-title">Gemini Industrial Website</h4>
 									<div class="btn-group dropup">
-										<button type="button" class="btn btn-dark dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+										<button type="button" class="btn btn-sm text-body dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
 											<span class="d-none d-md-inline-block">Technologies</span>
 										</button>
 										<ul class="dropdown-menu dropdown-menu-end bg-dark px-1" style="min-width: 0;">
@@ -264,24 +271,24 @@
 									</div>
 								</div>
 								<div class="card-body">
-									<p class="card-text text-dark">Currently working with the leaders at Gemini on exact content to import to the framework I have built them. This was the 
+									<p class="card-text">Currently working with the leaders at Gemini on exact content to import to the framework I have built them. This was the 
 										previous company I worked at, and I took it upon myself to update their website. They decided to move forward with this build, and pay me for 
 										my time.
 									</p>
 								</div>
-								<div class="card-footer bg-light border-0 d-flex justify-content-between pt-3">
-									<a href="https://github.com/anthonydefine/GeminiWebsite" target="_blank" class="card-link btn btn-outline-dark">Source code</a>
-									<a href="https://anthonydefine.github.io/GeminiWebsite/" target="_blank" class="card-link btn btn-outline-dark">View website</a>
+								<div class="card-footer border-0 d-flex justify-content-between pt-3">
+									<a href="https://github.com/anthonydefine/GeminiWebsite" target="_blank" class="card-link btn btn-outline-info">Source code</a>
+									<a href="https://anthonydefine.github.io/GeminiWebsite/" target="_blank" class="card-link btn btn-outline-info">View website</a>
 								</div>
 							</div>
 						</div>
 						<div class="col">
-							<div class="card bg-light shadow-lg h-100">
+							<div class="card shadow-lg h-100">
 								<img src="images/project-thumbnails/akronmarathonthumb.png" class="card-img-top" alt="...">
 								<div class="card-body d-flex justify-content-between align-items-center">
-									<h4 class="card-title text-dark">Akron Marathon Website</h4>
+									<h4 class="card-title">Akron Marathon Website</h4>
 									<div class="btn-group dropup">
-										<button type="button" class="btn btn-dark dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+										<button type="button" class="btn btn-sm text-body dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
 											<span class="d-none d-md-inline-block">Technologies</span>
 										</button>
 										<ul class="dropdown-menu dropdown-menu-end bg-dark px-1" style="min-width: 0;">
@@ -294,13 +301,13 @@
 									</div>
 								</div>
 								<div class="card-body">
-									<p class="card-text text-dark">After creating the Gemini website above I thought this Akron marathon website would be a good challenge to clone using bootstrap.
+									<p class="card-text">After creating the Gemini website above I thought this Akron marathon website would be a good challenge to clone using bootstrap.
 										The customized carousels, navigation, footer we great practice using my bootstrap and JavaScript skills learned this far.
 									</p>
 								</div>
-								<div class="card-footer bg-light border-0 d-flex justify-content-between pt-3">
-									<a href="https://github.com/anthonydefine/akron-marathon-demo" target="_blank" class="card-link btn btn-outline-dark">Source code</a>
-									<a href="https://anthonydefine.github.io/akron-marathon-demo/" target="_blank" class="card-link btn btn-outline-dark">View website</a>
+								<div class="card-footer border-0 d-flex justify-content-between pt-3">
+									<a href="https://github.com/anthonydefine/akron-marathon-demo" target="_blank" class="card-link btn btn-outline-info">Source code</a>
+									<a href="https://anthonydefine.github.io/akron-marathon-demo/" target="_blank" class="card-link btn btn-outline-info">View website</a>
 								</div>
 							</div>
 						</div>
@@ -310,10 +317,10 @@
 					<div class="row row-cols-1 row-cols-md-2 mt-3 g-3">
 						<div class="col">
 							<div class="card shadow-sm h-100">
-								<div class="card-header d-flex justify-content-between align-items-center">
-									<h4 class="card-title text-dark">To-do list</h4>
+								<div class="card-header d-flex justify-content-between align-items-center py-2">
+									<h4 class="card-title">To-do list</h4>
 									<div class="btn-group dropdown">
-										<button type="button" class="btn btn-dark dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+										<button type="button" class="btn btn-sm text-body dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
 											<span class="d-none d-md-inline-block">Technologies</span>
 										</button>
 										<ul class="dropdown-menu dropdown-menu-end bg-dark px-1" style="min-width: 0;">
@@ -326,11 +333,11 @@
 									</div>
 								</div>
 								<div class="card-body">
-									<p class="card-text text-dark">A simple todo list modal project. Features adding, checking off, and deleting todo's.
+									<p class="card-text">A simple todo list modal project. Features adding, checking off, and deleting todo's.
 									</p>
 								</div>
-								<div class="card-footer bg-white border-0 d-flex justify-content-end mx-3">
-									<a href="#" class="card-link btn btn-outline-dark" data-bs-toggle="modal" data-bs-target="#launchTodoModal">View demo</a>
+								<div class="card-footer border-1 d-flex justify-content-end p-3">
+									<a href="#" class="card-link btn btn-outline-info" data-bs-toggle="modal" data-bs-target="#launchTodoModal">View demo</a>
 								</div>
 							</div>
 							<div class="modal fade" id="launchTodoModal" tabindex="-1" aria-labelledby="TodoListMdoal" aria-hidden="true">
@@ -356,9 +363,9 @@
 						<div class="col">
 							<div class="card shadow-sm h-100">
 								<div class="card-header d-flex justify-content-between align-items-center">
-									<h4 class="card-title text-dark">Tip calculator</h4>
+									<h4 class="card-title">Tip calculator</h4>
 									<div class="btn-group dropdown">
-										<button type="button" class="btn btn-dark dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+										<button type="button" class="btn btn-sm text-body dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
 											<span class="d-none d-md-inline-block">Technologies</span>
 										</button>
 										<ul class="dropdown-menu dropdown-menu-end bg-dark px-1" style="min-width: 0;">
@@ -371,11 +378,11 @@
 									</div>
 								</div>
 								<div class="card-body">
-									<p class="card-text text-dark">This tip calculator application allows a user to calculate the tip total and bill total for a party up to 8 people.
+									<p class="card-text">This tip calculator application allows a user to calculate the tip total and bill total for a party up to 8 people.
 									</p>
 								</div>
-								<div class="card-footer bg-white border-0 d-flex justify-content-end mx-3">
-									<a href="#" class="card-link btn btn-outline-dark" data-bs-toggle="modal" data-bs-target="#launchTipModal">View demo</a>
+								<div class="card-footer border-1 d-flex justify-content-end p-3">
+									<a href="#" class="card-link btn btn-outline-info" data-bs-toggle="modal" data-bs-target="#launchTipModal">View demo</a>
 								</div>
 							</div>
 							<div class="modal fade" id="launchTipModal" data-bs-keyboard="false" tabindex="-1" aria-labelledby="launchTipModallabel" aria-hidden="true">
@@ -433,9 +440,9 @@
 						<div class="col">
 							<div class="card shadow-sm h-100">
 								<div class="card-header d-flex justify-content-between align-items-center">
-									<h4 class="card-title text-dark">Battleship game</h4>
+									<h4 class="card-title">Battleship game</h4>
 									<div class="btn-group dropdown">
-										<button type="button" class="btn btn-dark dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+										<button type="button" class="btn btn-sm text-body dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
 											<span class="d-none d-md-inline-block">Technologies</span>
 										</button>
 										<ul class="dropdown-menu dropdown-menu-end bg-dark px-1" style="min-width: 0;">
@@ -446,13 +453,13 @@
 									</div>
 								</div>
 								<div class="card-body">
-									<p class="card-text text-dark">One of the major ways I learned the JavaScript basics was through the Head First textbook series. This was a great project that was taught throughout the book.
+									<p class="card-text">One of the major ways I learned the JavaScript basics was through the Head First textbook series. This was a great project that was taught throughout the book.
 										Includes many features such as; displays, interference checker (making sure no battleships generates over eachother), accuracy calculator. I also added a start new game button for an
 										easy reset.
 									</p>
 								</div>
-								<div class="card-footer bg-white border-0 d-flex justify-content-end mx-3">
-									<a href="https://github.com/anthonydefine/Battleship" target="_blank" class="card-link btn btn-outline-dark">Source code</a>
+								<div class="card-footer border-1 d-flex justify-content-end p-3">
+									<a href="https://github.com/anthonydefine/Battleship" target="_blank" class="card-link btn btn-outline-info">Source code</a>
 								</div>
 							</div>
 						</div>
@@ -466,7 +473,7 @@
 								<div class="card-body d-flex justify-content-between align-items-center">
 									<h4 class="card-title">Price grid component</h4>
 									<div class="btn-group dropup">
-										<button type="button" class="btn btn-dark dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+										<button type="button" class="btn btn-sm text-body dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
 											<span class="d-none d-md-inline-block">Technologies</span>
 										</button>
 										<ul class="dropdown-menu dropdown-menu-end bg-dark px-1" style="min-width: 0;">
@@ -483,27 +490,27 @@
 										<li>See a hover state on desktop for the Sign Up call-to-action.</li>
 									</ul>
 								</div>
-								<div class="card-footer bg-white border-0 d-flex justify-content-between pt-3">
-									<a href="https://github.com/anthonydefine/Single-price-component" target="_blank" class="card-link btn btn-outline-dark">Source code</a>
-									<a href="https://www.frontendmentor.io/solutions/responsive-price-grid-component-using-bootstrap-52-framework-CblSEy-QAf" target="_blank" class="card-link btn btn-outline-dark">Solution</a>
+								<div class="card-footer border-1 d-flex justify-content-between pt-3">
+									<a href="https://github.com/anthonydefine/Single-price-component" target="_blank" class="card-link btn btn-outline-info">Source code</a>
+									<a href="https://www.frontendmentor.io/solutions/responsive-price-grid-component-using-bootstrap-52-framework-CblSEy-QAf" target="_blank" class="card-link btn btn-outline-info">Solution</a>
 								</div>
 							</div>
 						</div>
 					</div>
 				</div>
 			</div>
-		</div>
+		</section>
 		<div aria-live="polite" aria-atomic="true" class="d-none d-md-block bd-example-toasts rounded-3">
 			<div class="toast-container position-fixed bottom-0 end-0 p-4" id="toastPlacement">
 				<div class="toast" role="alert" aria-live="assertive" aria-atomic="true">
-					<div class="toast-header">
-						<strong class="me-auto fs-5 text-info" style="letter-spacing: +0.07rem;">Check out my newest project!</strong>
+					<div class="toast-header d-flex align-items-center">
+						<h3 class="me-auto fs-5 text-info fw-bold" style="letter-spacing: +0.07rem;">Check out my newest project!</h3>
 						<button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
 					</div>
 					<div class="toast-body text-center">
 						<img class="w-75" src="images/project-thumbnails/geminithumb.png" alt="">
-						<div class="bg-light border-0 d-flex justify-content-between pt-3">
-							<a href="#projectsection" class="card-link btn btn-outline-dark w-100" id="toastBtn">Got to projects</a>
+						<div class="border-0 d-flex justify-content-between pt-3">
+							<a href="#projectsection" class="card-link btn btn-outline-info w-100" onclick="hideToast()">Got to projects</a>
 						</div>
 					</div>
 				</div>
@@ -512,26 +519,26 @@
 		<footer class="container-fluid">
 			<div class="row row-cols-1 row-cols-md-3 g-3">
 				<div class="col">
-					<h5 class="text-center text-dark">Get in touch</h5>
+					<h5 class="text-center">Get in touch</h5>
 					<div class="list-group list-group-flush text-center text-md-start text-decoration-underline">
-						<a href="mailto:defineworkspace00@gmail.com" target="_blank" class="list-group-item list-group-item-action text-dark">E-mail</a>
-						<a href="https://github.com/anthonydefine" target="_blank" class="list-group-item list-group-item-action text-dark">Github</a>
-						<a href="https://www.linkedin.com/in/anthony-define/" target="_blank" class="list-group-item list-group-item-action text-dark">Linkedin</a>
+						<a href="mailto:defineworkspace00@gmail.com" target="_blank" class="list-group-item list-group-item-action">E-mail</a>
+						<a href="https://github.com/anthonydefine" target="_blank" class="list-group-item list-group-item-action">Github</a>
+						<a href="https://www.linkedin.com/in/anthony-define/" target="_blank" class="list-group-item list-group-item-action">Linkedin</a>
 					</div>
 				</div>
 				<div class="col text-center py-4 py-md-0">
 					<img src="images/bitmoji/IMG_4106.PNG" class="img-fluid" alt="" style="max-height: 100px; max-width: 100px;">
-					<h5 class="text-dark">
-						<small class="text-dark">website created by:</small>
+					<h5>
+						<small>website created by:</small>
 						Anthony Define
 					</h5>
 				</div>
 				<div class="col">
-					<h5 class="text-center text-dark">Other links</h5>
+					<h5 class="text-center">Other links</h5>
 					<div class="list-group list-group-flush text-center text-md-end text-decoration-underline">
-						<a href="certficate.pdf" target="_blank" class="list-group-item list-group-item-action text-dark">Certificate</a>
-						<a href="Resume.pdf" target="_blank" class="list-group-item list-group-item-action text-dark">Resume</a>
-						<a href="https://www.cantonrep.com/story/news/local/plain/2014/05/30/glenoak-senior-gets-into-shoe/37229228007/" target="_blank" class="list-group-item list-group-item-action text-dark">Newspaper article</a>
+						<a href="certficate.pdf" target="_blank" class="list-group-item list-group-item-action">Certificate</a>
+						<a href="Resume.pdf" target="_blank" class="list-group-item list-group-item-action">Resume</a>
+						<a href="https://www.cantonrep.com/story/news/local/plain/2014/05/30/glenoak-senior-gets-into-shoe/37229228007/" target="_blank" class="list-group-item list-group-item-action">Newspaper article</a>
 					</div>
 				</div>
 			</div>

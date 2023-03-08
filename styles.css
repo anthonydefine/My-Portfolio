@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@400;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@400;600;900&display=swap');
 
 html {
   scroll-behavior: smooth;
@@ -15,10 +15,7 @@ body::-webkit-scrollbar {
   display: none;
 }
 /* Navigation */
-.nav-link.active {
-	border-bottom: 3px solid #26addb;
-}
-.nav-link:hover {
+.nav-link.active, .nav-link:hover {
 	border-bottom: 3px solid #26addb;
 }
 /* Landing */
@@ -33,6 +30,26 @@ body::-webkit-scrollbar {
 }
 #herosection button:hover a {
   color: white!important;
+}
+.display-1 {
+  background-image: linear-gradient(
+    to bottom,
+    transparent 0%,
+    transparent 90%,
+    #26addb 90%,
+    #26addb 100%
+  );
+  background-repeat: no-repeat;
+  background-size: 0% 100%;
+  background-position-x: right;
+  transition: background-size 600ms;
+}
+.display-1:hover {
+  background-size: 100% 100%;
+  background-position-x: left;
+}
+button.nav-link.active {
+  color: #26addb!important;
 }
 /* Todo List Project */
 #mylist li {
@@ -55,8 +72,6 @@ body::-webkit-scrollbar {
 li.completedtodo {
   text-decoration: line-through;
 }
-
-
 /* Reveal Effect */
 .reveal {
   position: relative;

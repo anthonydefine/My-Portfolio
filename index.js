@@ -27,7 +27,7 @@ addtodobtn.addEventListener('click', (e)=>{
     })
   }  
   inputtodo.value = "";
-})
+});
 
 //Tip Calculator Modal
 const resetButton = document.querySelector("#resetBtn", resetForm);
@@ -69,27 +69,26 @@ function reveal(){
   }
 }
 
-//Dark/Light Mode Toggle
-
-const colorToggle = document.getElementById("darklightToggle");
-
-$(document).ready(function(){
-  $("#darklightToggle").click(function(){
-    $("div").toggleClass("bg-dark", "bg-light");
-  });
-});
 
 //New Project Toast 
+const toast = document.querySelector(".toast");
 
 function showToast(){
-  let toast = document.querySelector(".toast");
-
   toast.classList.add("show");
   setTimeout(function(){
     toast.classList.remove("show");
   }, 10000);
 };
 
-const toastBtn = document.querySelector("#toastBtn");
+function hideToast(){
+  toast.classList.remove("show");
+}
 
-addEventListener
+//Dark/Light Mode Toggle
+const body = document.querySelector("body");
+
+function darkMode() {
+  if(body.hasAttribute("data-bs-theme")){
+    body.removeAttribute("data-bs-theme")
+  } else(body.setAttribute("data-bs-theme", "dark"))
+}
