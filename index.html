@@ -20,30 +20,29 @@
 						<span class="navbar-toggler-icon"></span>
 					</button>
 					<div class="dropdown d-block d-md-none pe-md-3">
-						<button type="button" class="btn btn-outline-info rounded-pill dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false" data-bs-auto-close="outside">
+						<button type="button" class="btn btn-outline-info rounded-pill dropdown-toggle" id="whiteBtn" data-bs-toggle="dropdown" aria-expanded="false" data-bs-auto-close="outside">
 							Contact
 						</button>
-						<form class="dropdown-menu dropdown-menu-end p-3" action="https://formsubmit.co/defineworkspace00@gmail.com" method="POST" style="width: 16rem;" id="contactform">
-							<input type="hidden" name="_next" value="https://anthonydefine.github.io/My-Portfolio/thankyou.html">
+						<form class="dropdown-menu dropdown-menu-end p-3 shadow-lg" name="New form submission" action="https://formspree.io/f/meqwzolz" method="POST" style="width: 16rem;" id="contactform">
 							<div class="row row-cols-2 mb-3">
 								<div class="col">
 									<label for="firstname" class="form-label">First name*</label>
-									<input type="text" name="First name" class="form-control" id="firstname" required>
+									<input type="text" name="firstname" class="form-control bg-body" required>
 								</div>
 								<div class="col">
 									<label for="lastname" class="form-label">Last name*</label>
-									<input type="text" name="Last name" class="form-control" id="lastname" required>
+									<input type="text" name="lastname" class="form-control bg-body" required>
 								</div>
 							</div>
 							<div class="mb-3">
 								<label for="emailinput" class="form-label">Email address*</label>
-								<input type="email" name="E-mail" class="form-control" id="emailinput" placeholder="email@example.com" required>
+								<input type="email" name="email" class="form-control bg-body" placeholder="email@example.com" required>
 							</div>
 							<div class="mb-3">
 								<label for="messagearea" class="form-label">Message*</label>
-								<textarea class="form-control" name="Message" id="messagearea" rows="3" required></textarea>
+								<textarea class="form-control bg-body" name="message" rows="3" required></textarea>
 							</div>
-							<button type="submit" class="btn btn-primary w-100">Submit</button>
+							<input type="submit" value="Submit" class="btn btn-outline-info w-100" id="whiteBtn">
 						</form>
 					</div>
 					<div class="collapse navbar-collapse" id="navbarTogglerDemo02">
@@ -58,42 +57,42 @@
 								<a class="nav-link d-inline-block" href="#projectsection">Projects</a>
 							</li>
 							<div class="form-check form-switch mt-2 d-block d-sm-none" id="dark-container">
-								<label class="form-check-label me-5" for="flexSwitchCheckDefault">Dark mode</label>
-								<input class="form-check-input bg-body border-info px-3" type="checkbox" role="switch" id="flexSwitchCheckDefault" onclick="darkMode()">
+								<label class="form-check-label me-5" for="darkSwitch">Dark mode</label>
+								<input class="form-check-input bg-body border-info px-3" type="checkbox" role="switch" onclick="darkMode()">
 							</div>
 						</ul>
 					</div>
 				</div>
 				<div class="d-none d-md-flex align-items-center end-0 position-absolute">
 					<div class="form-check form-switch me-3 d-flex align-items-center" id="dark-container">
-						<label class="form-check-label float-start me-5 d-none d-lg-block" for="flexSwitchCheckDefault">Dark mode</label>
-						<input class="form-check-input bg-body border-info px-3" type="checkbox" role="switch" id="flexSwitchCheckDefault" onclick="darkMode()">
+						<label class="form-check-label float-start me-5 d-none d-lg-block" for="darkSwitch">Dark mode</label>
+						<input class="form-check-input bg-body border-info px-3" type="checkbox" role="switch" onclick="darkMode()">
 					</div>
 					<div class="dropdown me-3">
-						<button type="button" class="btn btn-outline-info rounded-pill dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false" data-bs-auto-close="outside">
+						<button type="button" class="btn btn-outline-info rounded-pill dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false" data-bs-auto-close="outside"
+						id="whiteBtn">
 							Contact
 						</button>
-						<form class="dropdown-menu dropdown-menu-end p-3" action="https://formsubmit.co/defineworkspace00@gmail.com" method="POST" style="width: 16rem;" id="contactform">
-							<input type="hidden" name="_next" value="https://anthonydefine.github.io/My-Portfolio/thankyou.html">
+						<form class="dropdown-menu dropdown-menu-end p-3 shadow-lg" name="New form submission" action="https://formspree.io/f/meqwzolz" method="POST" style="width: 16rem;" id="contactform">
 							<div class="row row-cols-2 mb-3">
 								<div class="col">
 									<label for="firstname" class="form-label">First name*</label>
-									<input type="text" name="First name" class="form-control bg-body" id="firstname" required>
+									<input type="text" name="firstname" class="form-control bg-body" required>
 								</div>
 								<div class="col">
 									<label for="lastname" class="form-label">Last name*</label>
-									<input type="text" name="Last name" class="form-control bg-body" id="lastname" required>
+									<input type="text" name="lastname" class="form-control bg-body" required>
 								</div>
 							</div>
 							<div class="mb-3">
 								<label for="emailinput" class="form-label">Email address*</label>
-								<input type="email" name="E-mail" class="form-control bg-body" id="emailinput" placeholder="email@example.com" required>
+								<input type="email" name="email" class="form-control bg-body" placeholder="email@example.com" required>
 							</div>
 							<div class="mb-3">
 								<label for="messagearea" class="form-label">Message*</label>
-								<textarea class="form-control bg-body" name="Message" id="messagearea" rows="3" required></textarea>
+								<textarea class="form-control bg-body" name="message" rows="3" required></textarea>
 							</div>
-							<button type="submit" class="btn btn-primary w-100">Submit</button>
+							<input type="submit" value="Submit" class="btn btn-outline-info w-100" id="whiteBtn">
 						</form>
 					</div>
 				</div>
@@ -113,23 +112,20 @@
 						</h3>
 						<h1 class="text-uppercase text-info fw-bold d-inline-block display-1">web developer</h1>
 						<h3>Focused on using frontend technologies to solve problems + grow your business.</h3>
-						<div class="my-4 px-5 d-flex justify-content-around" id="devicons">
+						<a href="https://github.com/anthonydefine" target="_blank" class="text-decoration-none"data-bs-toggle="tooltip" data-bs-placement="bottom" title="My Github">
+							<img src="images/dev-icons/icons8-github-48.png" alt="Github icon" class="d-inline-block">
+						</a>
+						<a href="https://www.linkedin.com/in/anthony-define/" target="_blank" class="text-decoration-none"data-bs-toggle="tooltip" data-bs-placement="bottom" title="My Linkedin">
+							<img src="images/dev-icons/icons8-linkedin-48.png" alt="Linkedin icon" class="d-inline-block">
+						</a>
+						<div class="mt-4 p-2 d-flex justify-content-evenly align-items-center" id="devicons">
+							<h3>Tech Stack</h3>
 							<img src="images/dev-icons/icons8-html-5-48.png" alt="" data-bs-toggle="tooltip" data-bs-placement="bottom" title="HTML5">
 							<img src="images/dev-icons/icons8-css3-48.png" alt="" data-bs-toggle="tooltip" data-bs-placement="bottom" title="CSS3">
 							<img src="images/dev-icons/icons8-javascript-48.png" alt="" data-bs-toggle="tooltip" data-bs-placement="bottom" title="JavaScript">
 							<img src="images/dev-icons/icons8-bootstrap-48.png" alt="" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Bootstrap">
 							<img src="images/dev-icons/icons8-tailwindcss-48.png" alt="" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Tailwindcss">
 							<img src="images/dev-icons/icons8-sass-48.png" alt="" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Sass">
-						</div>
-						<div class="d-flex mt-md-5 pb-3 pb-md-0 justify-content-evenly">
-							<button type="button" class="btn btn-outline-info d-flex align-items-center px-lg-4 shadow-sm rounded-5">
-								<img src="images/dev-icons/icons8-github-48.png" alt="Github icon" class="d-none d-md-inline-block me-3">
-								<a href="https://github.com/anthonydefine" target="_blank" class="text-decoration-none text-info">My Github</a>
-							</button>
-							<button type="button" class="btn btn-outline-info d-flex align-items-center px-lg-4 shadow-sm rounded-5" id="linkedBtn">
-								<img src="images/dev-icons/icons8-linkedin-48.png" alt="Linkedin icon" class="d-none d-md-inline-block me-3">
-								<a href="https://www.linkedin.com/in/anthony-define/" target="_blank" class="text-decoration-none text-info">My Linkedin</a>
-							</button>
 						</div>
 					</div>
 					<div class="col col-md-3 d-none d-md-block">
@@ -168,13 +164,11 @@
 							and throughout our five years of operation, after each show we donated 10% of profits to purchasing brand new shoes for our local homeless shelter. I donated hundreds of shoes, 
 							connected many people, and learned valuable lessons along the way.</p>
 							<div class="d-flex justify-content-evenly">
-								<button type="button" class="btn btn-info rounded-5 mt-2">
-									<img src="images/dev-icons/icons8-search-property-48.png" class="d-none d-md-inline">
-									<a href="https://www.cantonrep.com/story/news/local/plain/2014/05/30/glenoak-senior-gets-into-shoe/37229228007/" target="_blank" class="text-decoration-none text-light">Newspaper article</a>
+								<button type="button" class="btn btn-outline-info rounded-5 px-3 mt-2">
+									<a href="https://www.cantonrep.com/story/news/local/plain/2014/05/30/glenoak-senior-gets-into-shoe/37229228007/" target="_blank" class="text-decoration-none" id="whiteBtn">Newspaper article</a>
 								</button>
-								<button type="button" class="btn btn-info rounded-5 mt-2" data-bs-toggle="modal" data-bs-target="#eventpics">
-									<img src="images/dev-icons/icons8-image-gallery-48.png" class="d-none d-md-inline">
-									<a class="text-decoration-none text-light ps-md-1">Event photos</a>
+								<button type="button" class="btn btn-outline-info rounded-5 px-3 mt-2" data-bs-toggle="modal" data-bs-target="#eventpics">
+									<a class="text-decoration-none ps-md-1" id="whiteBtn">Event photos</a>
 								</button>
 							</div>
 					</div>
@@ -277,8 +271,8 @@
 									</p>
 								</div>
 								<div class="card-footer border-0 d-flex justify-content-between pt-3">
-									<a href="https://github.com/anthonydefine/GeminiWebsite" target="_blank" class="card-link btn btn-outline-info">Source code</a>
-									<a href="https://anthonydefine.github.io/GeminiWebsite/" target="_blank" class="card-link btn btn-outline-info">View website</a>
+									<a href="https://github.com/anthonydefine/GeminiWebsite" target="_blank" class="card-link btn btn-outline-info" id="whiteBtn">Source code</a>
+									<a href="https://anthonydefine.github.io/GeminiWebsite/" target="_blank" class="card-link btn btn-outline-info" id="whiteBtn">View website</a>
 								</div>
 							</div>
 						</div>
@@ -306,8 +300,8 @@
 									</p>
 								</div>
 								<div class="card-footer border-0 d-flex justify-content-between pt-3">
-									<a href="https://github.com/anthonydefine/akron-marathon-demo" target="_blank" class="card-link btn btn-outline-info">Source code</a>
-									<a href="https://anthonydefine.github.io/akron-marathon-demo/" target="_blank" class="card-link btn btn-outline-info">View website</a>
+									<a href="https://github.com/anthonydefine/akron-marathon-demo" target="_blank" class="card-link btn btn-outline-info" id="whiteBtn">Source code</a>
+									<a href="https://anthonydefine.github.io/akron-marathon-demo/" target="_blank" class="card-link btn btn-outline-info" id="whiteBtn">View website</a>
 								</div>
 							</div>
 						</div>
@@ -337,20 +331,20 @@
 									</p>
 								</div>
 								<div class="card-footer border-1 d-flex justify-content-end p-3">
-									<a href="#" class="card-link btn btn-outline-info" data-bs-toggle="modal" data-bs-target="#launchTodoModal">View demo</a>
+									<a href="#" class="card-link btn btn-outline-info" id="whiteBtn" data-bs-toggle="modal" data-bs-target="#launchTodoModal">View demo</a>
 								</div>
 							</div>
 							<div class="modal fade" id="launchTodoModal" tabindex="-1" aria-labelledby="TodoListMdoal" aria-hidden="true">
 								<div class="modal-dialog modal-dialog-centered">
 									<div class="modal-content">
-										<div class="modal-header bg-light text-dark">
+										<div class="modal-header">
 											<h5 class="modal-title" id="exampleModalLabel">To-do List</h5>
 											<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
 										</div>
 										<div class="modal-body rounded-bottom bg-light-subtle" style="height: 25rem;">
 											<div class="input-group mb-5">
 												<input type="textarea" class="form-control" id="newtodobox" aria-describedby="addtodo">
-												<button type="button" class="btn btn-primary text-white float-end" id="addtodo">Add</button>
+												<button type="button" class="btn btn-info text-white float-end" id="addtodo">Add</button>
 											</div>
 											<div class="mt-5">
 												<ul class="list-group" id="mylist"></ul>
@@ -382,25 +376,25 @@
 									</p>
 								</div>
 								<div class="card-footer border-1 d-flex justify-content-end p-3">
-									<a href="#" class="card-link btn btn-outline-info" data-bs-toggle="modal" data-bs-target="#launchTipModal">View demo</a>
+									<a href="#" class="card-link btn btn-outline-info" id="whiteBtn" data-bs-toggle="modal" data-bs-target="#launchTipModal">View demo</a>
 								</div>
 							</div>
 							<div class="modal fade" id="launchTipModal" data-bs-keyboard="false" tabindex="-1" aria-labelledby="launchTipModallabel" aria-hidden="true">
 								<div class=" modal-dialog modal-dialog-centered">
 									<div class="modal-content">
-										<div class="modal-header bg-light text-dark">
+										<div class="modal-header">
 											<h4 class="modal-title">Tip Calculator</h4>
 											<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
 										</div>
-										<div class="container-fluid modal-body bg-light">
+										<div class="container-fluid modal-body bg-body-secondary">
 											<form class="row text-center" id="tipCalcForm">
 												<div class="input-group col-10">
 													<span class="input-group-text">$</span>
-													<input type="number" class="form-control" id="preTotal" placeholder="Total bill amount" aria-label="Amount (to the nearest dollar)">
+													<input type="number" class="form-control bg-body" id="preTotal" placeholder="Total bill amount" aria-label="Amount (to the nearest dollar)">
 												</div>
 												<div class="mx-auto py-3 col-10">
-													<label class="text-dark" style="text-align: center;">Select tip percentage</label>
-													<select class="form-select col-8" id="selectTip" aria-label="Pick tip percentage">
+													<label style="text-align: center;">Select tip percentage</label>
+													<select class="form-select bg-body col-8" id="selectTip" aria-label="Pick tip percentage">
 														<option value="10">10%</option>
 														<option value="15">15%</option>
 														<option selected>20%</option>
@@ -409,8 +403,8 @@
 													</select>
 												</div>
 												<div class="mx-auto pb-3 col-10">
-													<label class="text-dark" style="text-align: center;">How many people are splitting?</label>
-													<select class="form-select col-8" id="totalGuests" aria-label="Total people splitting">
+													<label style="text-align: center;">How many people are splitting?</label>
+													<select class="form-select bg-body col-8" id="totalGuests" aria-label="Total people splitting">
 														<option selected>1</option>
 														<option value="1">2</option>
 														<option value="2">3</option>
@@ -424,13 +418,13 @@
 												<button type="button" id="calcBtn" class="btn btn-warning w-50 my-3" onclick="runApp()">Calculate</button>
 												<div class="input-group mb-3 col-10">
 													<span class="input-group-text">$</span>
-													<input type="number" id="tipAmountOutput" placeholder="Tip amount / person">
+													<input type="number" class="bg-body text-body" id="tipAmountOutput" placeholder="Tip amount / person">
 												</div>
 												<div class="input-group col-10">
 													<span class="input-group-text">$</span>
-													<input type="number" id="billAmountOutput" placeholder="Total / person">
+													<input type="number" class="bg-body text-body" id="billAmountOutput" placeholder="Total / person">
 												</div>
-												<button type="button" id="resetBtn" class="btn btn-primary text-white w-50 mt-3" onclick="resetForm()">Reset</button>
+												<button type="button" id="resetBtn" class="btn btn-info w-50 mt-3" onclick="resetForm()">Reset</button>
 											</form>
 										</div>
 									</div>
@@ -459,7 +453,7 @@
 									</p>
 								</div>
 								<div class="card-footer border-1 d-flex justify-content-end p-3">
-									<a href="https://github.com/anthonydefine/Battleship" target="_blank" class="card-link btn btn-outline-info">Source code</a>
+									<a href="https://github.com/anthonydefine/Battleship" target="_blank" class="card-link btn btn-outline-info" id="whiteBtn">Source code</a>
 								</div>
 							</div>
 						</div>
@@ -491,8 +485,8 @@
 									</ul>
 								</div>
 								<div class="card-footer border-1 d-flex justify-content-between pt-3">
-									<a href="https://github.com/anthonydefine/Single-price-component" target="_blank" class="card-link btn btn-outline-info">Source code</a>
-									<a href="https://www.frontendmentor.io/solutions/responsive-price-grid-component-using-bootstrap-52-framework-CblSEy-QAf" target="_blank" class="card-link btn btn-outline-info">Solution</a>
+									<a href="https://github.com/anthonydefine/Single-price-component" target="_blank" class="card-link btn btn-outline-info" id="whiteBtn">Source code</a>
+									<a href="https://www.frontendmentor.io/solutions/responsive-price-grid-component-using-bootstrap-52-framework-CblSEy-QAf" target="_blank" class="card-link btn btn-outline-info" id="whiteBtn">Solution</a>
 								</div>
 							</div>
 						</div>
@@ -504,13 +498,13 @@
 			<div class="toast-container position-fixed bottom-0 end-0 p-4" id="toastPlacement">
 				<div class="toast" role="alert" aria-live="assertive" aria-atomic="true">
 					<div class="toast-header d-flex align-items-center">
-						<h3 class="me-auto fs-5 text-info fw-bold" style="letter-spacing: +0.07rem;">Check out my newest project!</h3>
+						<h3 class="me-auto fs-5 text-body" style="letter-spacing: +0.07rem;">Check out my newest project!</h3>
 						<button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
 					</div>
 					<div class="toast-body text-center">
 						<img class="w-75" src="images/project-thumbnails/geminithumb.png" alt="">
 						<div class="border-0 d-flex justify-content-between pt-3">
-							<a href="#projectsection" class="card-link btn btn-outline-info w-100" onclick="hideToast()">Got to projects</a>
+							<a href="#projectsection" class="card-link btn btn-outline-info w-100" id="whiteBtn" onclick="hideToast()">Got to projects</a>
 						</div>
 					</div>
 				</div>

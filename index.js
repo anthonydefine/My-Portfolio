@@ -92,3 +92,4 @@ function darkMode() {
     body.removeAttribute("data-bs-theme")
   } else(body.setAttribute("data-bs-theme", "dark"))
 }
+

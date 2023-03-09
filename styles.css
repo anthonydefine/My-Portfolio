@@ -18,6 +18,9 @@ body::-webkit-scrollbar {
 .nav-link.active, .nav-link:hover {
 	border-bottom: 3px solid #26addb;
 }
+#whiteBtn:hover {
+  color: white!important;
+}
 /* Landing */
 @media only screen 
   and (min-device-width: 375px) 
@@ -55,14 +58,15 @@ button.nav-link.active {
 #mylist li {
   list-style: none;
   margin: 3px;
-  color: #054a91;
+  color: #26addb;
+  background-color: transparent;
   font-size: 24px;
-  border-bottom: 2px solid #054a91;
+  border-bottom: 2px solid #26addb;
   cursor: pointer;
   transition: 0.2s;
 }
 #mylist li:hover {
-  background-color: #81a4cd;
+  background-color: #26addb;
   color: white;
 }
 #mylist span {
