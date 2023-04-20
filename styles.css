@@ -20,6 +20,7 @@ body::-webkit-scrollbar {
 }
 #whiteBtn:hover {
   color: white!important;
+  text-decoration-color: white;
 }
 /* Landing */
 @media only screen 
