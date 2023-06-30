@@ -481,13 +481,15 @@
 													</select>
 												</div>
 												<button type="button" id="calcBtn" class="btn btn-warning w-50 my-3" onclick="runApp()">Calculate</button>
-												<div class="input-group mb-3 col-10">
+												<div class="input-group d-flex align-items-center mb-3 col-10">
 													<span class="input-group-text">$</span>
 													<input type="number" class="bg-body text-body" id="tipAmountOutput" placeholder="Tip amount / person">
+													<p class="ps-3 pt-3">Tip amount per person</p>
 												</div>
-												<div class="input-group col-10">
+												<div class="input-group d-flex align-items-center col-10">
 													<span class="input-group-text">$</span>
 													<input type="number" class="bg-body text-body" id="billAmountOutput" placeholder="Total / person">
+													<p class="ps-3 pt-3">Bill total per person</p>
 												</div>
 												<button type="button" id="resetBtn" class="btn btn-info w-50 mt-3" onclick="resetForm()">Reset</button>
 											</form>
