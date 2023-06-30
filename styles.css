@@ -88,3 +88,12 @@ li.completedtodo {
   transform: translateY(0px);
   opacity: 1;
 }
+
+/* Project Section */
+#gamepediaCard {
+  opacity: 100%;
+  transition: all 0.35s ease-in-out;
+}
+#gamepediaCard:hover {
+  opacity: 25%;
+}
