@@ -119,12 +119,12 @@
 						</a>
 						<div class="mt-4 p-2 d-flex justify-content-evenly align-items-center" id="devicons">
 							<h3>Tech Stack</h3>
-							<img src="images/dev-icons/icons8-javascript-48.png" alt="" data-bs-toggle="tooltip" data-bs-placement="bottom" title="JavaScript">
 							<img src="images/dev-icons/icons8-react-native-48.png" alt="" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Reactjs">
 							<img src="images/dev-icons/vite-js.png" alt="" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Vitejs">
 							<img src="images/dev-icons/icons8-bootstrap-48.png" alt="" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Bootstrap">
 							<img src="images/dev-icons/icons8-tailwindcss-48.png" alt="" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Tailwindcss">
 							<img src="images/dev-icons/icons8-sass-48.png" alt="" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Sass">
+							<img src="images/dev-icons/firebase.png" alt="" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Firebase">
 						</div>
 					</div>
 					<div class="col col-md-3 d-none d-md-block">
@@ -245,6 +245,79 @@
 					<div class="row row-cols-1 row-cols-md-2 mt-3 g-3 reveal">
 						<div class="col">
 							<div class="card shadow-lg h-100">
+								<img src="images/project-thumbnails/pixelwiki.png" class="card-img-top" alt="...">
+								<div class="card-body d-flex justify-content-between align-items-center">
+									<h4 class="card-title">PixelWiki.io - Video Game Library</h4>
+									<div class="btn-group dropup">
+										<button type="button" class="btn btn-sm text-body dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+											<span class="d-none d-md-inline-block">Technologies</span>
+										</button>
+										<ul class="dropdown-menu dropdown-menu-end bg-body-tertiary px-1" style="min-width: 0;">
+											<li><img src="images/dev-icons/icons8-tailwindcss-48.png" alt="" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Tailwind"></li>
+											<li><img src="images/dev-icons/icons8-react-native-48.png" alt="" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Reactjs"></li>
+											<li><img src="images/dev-icons/vite-js.png" alt="" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Vitejs"></li>
+											<li><img src="images/dev-icons/firebase.png" alt="" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Firebase"></li>
+										</ul>
+									</div>
+								</div>
+								<div class="card-body">
+									<nav>
+										<div class="nav nav-tabs" id="nav-tab" role="tablist">
+											<button class="nav-link active" id="nav-overview-tab" data-bs-toggle="tab" data-bs-target="#nav-overview" type="button" role="tab" aria-controls="nav-overview" aria-selected="true">Overview</button>
+											<button class="nav-link" id="nav-gamekey-tab" data-bs-toggle="tab" data-bs-target="#nav-gamekey" type="button" role="tab" aria-controls="nav-gamekey" aria-selected="true">Key Features</button>
+											<button class="nav-link" id="nav-gametech-tab" data-bs-toggle="tab" data-bs-target="#nav-gametech" type="button" role="tab" aria-controls="nav-gametech" aria-selected="false">Tech Features</button>
+										</div>
+									</nav>
+									<div class="tab-content" id="nav-tabContent">
+										<div class="tab-pane fade show active p-2" id="nav-overview" role="tabpanel" aria-labelledby="nav-overview-tab" tabindex="0">
+											<h6 class="text-decoration-underline">Video Game Encyclopedia Application (React, Vite, Tailwind, Firebase):</h6>
+											<p>
+												Designed and developed a dynamic video game encyclopedia application, offering an extensive database of over 550,000 games sourced from the rawg.io API. Users can explore detailed information about their 
+												favorite games, including descriptions, ratings, and screenshots. The application features a user-friendly interface created using React, Vite, and Tailwind ensuring fast loading times and a seamless browsing experience.
+											</p>
+										</div>
+										<div class="tab-pane fade p-2" id="nav-gamekey" role="tabpanel" aria-labelledby="nav-gamekey-tab" tabindex="0">
+											<ul>
+												<li>
+													Users can create personalized profiles, allowing them to save favorite games and maintain a curated library.
+												</li>
+												<li>
+													Integrated Firebase authentication and database systems to enable users to add games to their libraries and track their gaming history.
+												</li>
+												<li>
+													Implemented a robust search functionality, enabling users to search for games based on titles, genres, platforms, and more.
+												</li>
+												<li>
+													Ensured the application is fully responsive, allowing users to access the encyclopedia seamlessly across various devices, including desktops, tablets, and smartphones.
+												</li>
+											</ul>
+										</div>
+										<div class="tab-pane fade p-2" id="nav-gametech" role="tabpanel" aria-labelledby="nav-gametech-tab" tabindex="0">
+											<ul>
+												<li>
+													<span class="text-decoration-underline">Frontend</span>: Developed the frontend using React, a popular JavaScript library, and Vite, a fast build tool for modern web development.
+												</li>
+												<li>
+													<span class="text-decoration-underline">Backend</span>: Utilized Firebase for user authentication, real-time database management, and cloud storage for efficient data handling and storage.
+												</li>
+												<li>
+													<span class="text-decoration-underline">API Integration</span>: Leveraged the rawg.io API to fetch extensive game data, providing users with accurate and up-to-date information.
+												</li>
+												<li>
+													<span class="text-decoration-underline">UX</span>: Implemented intuitive UX/UI designs, enabling smooth navigation, detailed game exploration, and effortless library management.
+												</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+								<div class="card-footer border-0 d-flex justify-content-between pt-3">
+									<a href="https://github.com/anthonydefine/PixelWiki.io" target="_blank" class="card-link btn btn-outline-info" id="whiteBtn">Source code</a>
+									<a href="https://imaginative-axolotl-dd4e3b.netlify.app/" target="_blank" class="card-link btn btn-outline-info" id="whiteBtn">View website</a>
+								</div>
+							</div>
+						</div>
+						<div class="col">
+							<div class="card shadow-lg h-100">
 								<img src="images/project-thumbnails/w3clone-preview.png" class="card-img-top" alt="...">
 								<div class="card-body d-flex justify-content-between align-items-center">
 									<h4 class="card-title">W3Schools Course Catalog Clone</h4>
@@ -260,50 +333,57 @@
 									</div>
 								</div>
 								<div class="card-body">
-									<h4 class="text-body">Features</h4>
-									<ul class="card-text">
-										<li>Add to cart, quantity adjustments, remove from cart</li>
-										<li>Mobile first structure</li>
-										<li>Dynamic React Router v.6 for product pages</li>
-										<li>Sort, filter, list/grid view for full catalog</li>
-									</ul>
+									<div class="card-body">
+										<nav>
+											<div class="nav nav-tabs" id="nav-tab" role="tablist">
+												<button class="nav-link active" id="nav-w3overview-tab" data-bs-toggle="tab" data-bs-target="#nav-w3overview" type="button" role="tab" aria-controls="nav-w3overview" aria-selected="true">Overview</button>
+												<button class="nav-link" id="nav-w3key-tab" data-bs-toggle="tab" data-bs-target="#nav-w3key" type="button" role="tab" aria-controls="nav-w3key" aria-selected="true">Key Features</button>
+												<button class="nav-link" id="nav-w3tech-tab" data-bs-toggle="tab" data-bs-target="#nav-w3tech" type="button" role="tab" aria-controls="nav-w3tech" aria-selected="false">Tech Features</button>
+											</div>
+										</nav>
+										<div class="tab-content" id="nav-tabContent">
+											<div class="tab-pane fade show active p-2" id="nav-w3overview" role="tabpanel" aria-labelledby="nav-w3overview-tab" tabindex="0">
+												<h6 class="text-decoration-underline">Ecommerce Platform (React, Vite, Tailwind CSS):</h6>
+												<p>
+													Developed a feature-rich ecommerce platform inspired by W3Schools, leveraging modern web technologies such as React, Vite, and Tailwind CSS. This project offers a 
+													dynamic online shopping experience, complete with an extensive product catalog, intuitive user interfaces, and a fully functional shopping cart system.
+												</p>
+											</div>
+											<div class="tab-pane fade p-2" id="nav-w3key" role="tabpanel" aria-labelledby="nav-w3key-tab" tabindex="0">
+												<ul>
+													<li>
+														Implemented a dynamic product catalog with real-time data fetching, allowing users to browse a wide range of products conveniently.
+													</li>
+													<li>
+														Designed and developed user-friendly interfaces using React components, ensuring seamless navigation and a visually appealing layout.
+													</li>
+													<li>
+														Utilized Tailwind CSS to create a responsive and visually consistent design across various devices, enhancing the user experience on desktops, tablets, and mobile phones.
+													</li>
+													<li>
+														Developed a fully functional shopping cart system where users can add, remove, and update items. Integrated with state management to provide real-time cart updates.
+													</li>
+												</ul>
+											</div>
+											<div class="tab-pane fade p-2" id="nav-w3tech" role="tabpanel" aria-labelledby="nav-w3tech-tab" tabindex="0">
+												<ul>
+													<li>
+														<span class="text-decoration-underline">Frontend</span>: Built the frontend using React, a powerful JavaScript library, and Vite, a modern build tool for fast development.
+													</li>
+													<li>
+														<span class="text-decoration-underline">Styling</span>: Leveraged Tailwind CSS for efficient and responsive styling, ensuring a consistent and visually appealing user interface.
+													</li>
+													<li>
+														<span class="text-decoration-underline">State Management</span>: Utilized state management libraries (such as Redux or React Context API) to manage complex application states, including user authentication and shopping cart data.
+													</li>
+												</ul>
+											</div>
+										</div>
+									</div>
 								</div>
 								<div class="card-footer border-0 d-flex justify-content-between pt-3">
 									<a href="https://github.com/anthonydefine/W3SchoolsClone" target="_blank" class="card-link btn btn-outline-info" id="whiteBtn">Source code</a>
 									<a href="https://w3schoolscoursecatalog-clone.netlify.app/" target="_blank" class="card-link btn btn-outline-info" id="whiteBtn">View website</a>
-								</div>
-							</div>
-						</div>
-						<div class="col position-relative">
-							<div class="position-absolute top-50 start-50 translate-middle">
-								<h2 class="bg-warning px-3 py-1 rounded-2">Coming soon</h2>
-							</div>
-							<div class="card shadow-lg h-100" id="gamepediaCard">
-								<img src="images/project-thumbnails/gamepedia-preview.png" class="card-img-top" alt="Gamepedia thumbnail">
-								<div class="card-body d-flex justify-content-between align-items-center">
-									<h4 class="card-title">Gamepedia</h4>
-									<div class="btn-group dropup">
-										<button type="button" class="btn btn-sm text-body dropdown-toggle disabled" data-bs-toggle="dropdown" aria-expanded="false">
-											<span class="d-none d-md-inline-block">Technologies</span>
-										</button>
-										<ul class="dropdown-menu dropdown-menu-end bg-body-tertiary px-1" style="min-width: 0;">
-											<li><img src="images/dev-icons/icons8-tailwindcss-48.png" alt="" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Tailwind"></li>
-											<li><img src="images/dev-icons/icons8-react-native-48.png" alt="" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Reactjs"></li>
-											<li><img src="images/dev-icons/vite-js.png" alt="" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Vitejs"></li>
-										</ul>
-									</div>
-								</div>
-								<div class="card-body">
-									<h4 class="text-body">Features</h4>
-									<ul class="card-text">
-										<li>ASYNC api data from rawg.io</li>
-										<li>Mobile first structure</li>
-										<li>Dynamic React Router v.6</li>
-									</ul>
-								</div>
-								<div class="card-footer border-0 d-flex justify-content-between pt-3">
-									<a href="https://github.com/anthonydefine/react-time-travel" target="_blank" class="card-link btn btn-outline-info disabled" id="whiteBtn">Source code</a>
-									<a href="https://react-time-travel.netlify.app/" target="_blank" class="card-link btn btn-outline-info disabled" id="whiteBtn">View website</a>
 								</div>
 							</div>
 						</div>
